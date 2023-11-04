@@ -1,2 +1,2 @@
 # AEOM
-Fine art shop
+Photography print shop
