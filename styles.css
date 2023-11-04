@@ -4,6 +4,12 @@
 font-family: 'Big Shoulders Display', sans-serif;
 */
 
+/*
+* {
+    border: 5px solid red;
+}
+*/
+
 body {
     display: flex;
     flex-direction: row;
@@ -23,6 +29,8 @@ body {
 
 #slideInMenu > p {
     margin-top: 30px;
+    opacity: 0;
+    cursor: pointer;
 }
 
 #mainContent {
@@ -44,7 +52,9 @@ body {
     'opsz' 20
 }
 
-.material-icons.md-48 { font-size: 48px; }
+.material-symbols-outlined:hover {
+    cursor: pointer;
+}
 
 #toolbar {
     display: flex;
@@ -66,11 +76,17 @@ body {
     margin-right: 20px;
 }
 
-.toolbarDivider > div {
+#toolbarDivider > div {
     background-color: black;
     width: 100%;
     height: 1.4px;
     margin-top: 20px;
+}
+
+.sim-ItemDivider {
+    background-color: rgba(105, 105, 105, 0.556);
+    width: 100px;
+    height: 1.4px;
 }
 
 #aeomHeader > h1{
@@ -87,4 +103,29 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#shopTiles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.tileTrack {
+    display: flex;
+    flex-direction: row;
+}
+
+.shopItems {
+    margin: 30px;
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.shopItems:hover {
+    transition: 0.8s;
+    scale: 1.2;
 }
