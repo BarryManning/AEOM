@@ -3,6 +3,9 @@ const slideInMenu = document.getElementById('slideInMenu');
 const simItems = document.getElementsByClassName('sim-Item');
 const shopTrackOne = document.getElementById('trackOne');
 const shopTrackTwo = document.getElementById('trackTwo');
+const shopTrackThree = document.getElementById('trackThree');
+
+const shopTiles = [shopTrackOne, shopTrackTwo, shopTrackThree];
 
 const aeomPrints = [
     'AEOMAssets/pexels-tolga-ahmetler-18000249.jpg',
@@ -10,20 +13,21 @@ const aeomPrints = [
     'AEOMAssets/pexels-nelson-lorenz-18845175.jpg',
     'AEOMAssets/pexels-mhajr-invincible-18844347.jpg',
     'AEOMAssets/pexels-lukas-rychvalsky-3075449.jpg',
-    'AEOMAssets/pexels-carolin-wenske-18758628.jpg'
+    'AEOMAssets/pexels-carolin-wenske-18758628.jpg',
+    'AEOMAssets/pexels-luke-miller-18802089.jpg',
+    'AEOMAssets/pexels-lexi-lauwers-2840896.jpg',
+    'AEOMAssets/pexels-bekir-donmez-6304646.jpg'
 ];
 
-function populateShopTile() {
-
-    for (let i = 0; i < aeomPrints.length; i++) {
-        const img = document.createElement('img'); // Create a new img element
-        img.src = aeomPrints[i]; // Set the src attribute with the image link from simItems
-        img.classList.add('shopItems');
-
-        if (shopTrackOne.childElementCount === 3){
-            shopTrackTwo.appendChild(img); // Add the img element to the shopTile container
-        } else {
-            shopTrackOne.appendChild(img); // Add the img element to the shopTile container
+// write a script that uses a loop to populate the three shop tiles
+function populateShopTile () {
+    let printList = 0;
+    for (let i = 0; i < shopTiles.length; i++) {
+        for (let itemCount = 0; itemCount < 3; itemCount++ && printList++) {
+            const item = document.createElement('img');
+            item.src = aeomPrints[printList];
+            item.classList.add('shopItems');
+            shopTiles[i].appendChild(item);
         }
     }
 }
