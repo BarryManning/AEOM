@@ -23,14 +23,15 @@ const aeomPrints = [
 function populateShopTile () {
     let printList = 0;
     for (let i = 0; i < shopTiles.length; i++) {
-        for (let itemCount = 0; itemCount < 3; itemCount++ && printList++) {
+        for (let itemCount = 0; itemCount < 3; itemCount++) {
             const item = document.createElement('img');
             item.src = aeomPrints[printList];
             item.classList.add('shopItems');
             shopTiles[i].appendChild(item);
+            printList++
         }
     }
-}
+};
 
 populateShopTile();
 
@@ -58,7 +59,3 @@ menuButton.addEventListener('click', () => {
         makeOpaque(simItems);
     }
 });
-
-function addPrintToTrack () {
-
-}
