@@ -23,7 +23,7 @@ const aeomPrints = [
 function populateShopTile () {
     let printList = 0;
     for (let i = 0; i < shopTiles.length; i++) {
-        for (let itemCount = 0; itemCount < 3; itemCount++) {
+        for (let itemCount = 0; itemCount < 4; itemCount++) {
             const item = document.createElement('img');
             item.src = aeomPrints[printList];
             item.classList.add('shopItems');
@@ -50,12 +50,12 @@ function makeTransparent (items) {
 };
 
 menuButton.addEventListener('click', () => {
-    if (slideInMenu.style.width == '300px') {
+    if (slideInMenu.style.width == '200px') {
         slideInMenu.style.width = '0px';
         makeTransparent(simItems)
     } else {
         slideInMenu.style.transition = '0.6s';
-        slideInMenu.style.width = '300px';
+        slideInMenu.style.width = '200px';
         makeOpaque(simItems);
     }
 });

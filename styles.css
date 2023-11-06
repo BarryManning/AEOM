@@ -25,6 +25,7 @@ body {
     width: 0px;
     background-color: rgb(231, 231, 231);
     overflow: hidden;
+    flex-shrink: 0;
 }
 
 #slideInMenu > p {
@@ -79,6 +80,7 @@ body {
     margin-right: 20px;
 }
 
+/* main toolbar divider */
 #toolbarDivider > div {
     background-color: black;
     width: 100%;
@@ -86,6 +88,7 @@ body {
     margin-top: 20px;
 }
 
+/* slide in menu divider */
 .sim-ItemDivider {
     background-color: rgba(105, 105, 105, 0.556);
     width: 100px;
