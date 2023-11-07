@@ -16,7 +16,10 @@ const aeomPrints = [
     'AEOMAssets/pexels-carolin-wenske-18758628.jpg',
     'AEOMAssets/pexels-luke-miller-18802089.jpg',
     'AEOMAssets/pexels-lexi-lauwers-2840896.jpg',
-    'AEOMAssets/pexels-bekir-donmez-6304646.jpg'
+    'AEOMAssets/pexels-bekir-donmez-6304646.jpg',
+    'AEOMAssets/pexels-matteo-milan-10937710.jpg',
+    'AEOMAssets/pexels-pat-whelen-6711200.jpg',
+    'AEOMAssets/pexels-selman-arif-golbasi-13721769.jpg'
 ];
 
 // write a script that uses a loop to populate the three shop tiles

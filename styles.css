@@ -23,7 +23,7 @@ body {
     align-items: center;
     height: 100vmax;
     width: 0px;
-    background-color: rgb(231, 231, 231);
+    background-color: rgba(201, 201, 201, 0.411);
     overflow: hidden;
     flex-shrink: 0;
 }
@@ -43,7 +43,6 @@ body {
     padding-left: 60px;
     padding-right: 60px;
     padding-top: 20px;
-    margin-bottom: 40px;
 }
 
 .material-symbols-outlined {
@@ -90,7 +89,7 @@ body {
 
 /* slide in menu divider */
 .sim-ItemDivider {
-    background-color: rgba(105, 105, 105, 0.556);
+    background-color: rgba(95, 95, 95, 0.556);
     width: 100px;
     height: 1.4px;
 }
